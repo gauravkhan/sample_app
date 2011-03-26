@@ -12,7 +12,7 @@ def create
 if @user.save
 flash[:success] = "Welcome to the My G**GIT app!"
 redirect_to @user
-# Handle a successful save.
+redirect_to @user
 else
 @title = "Sign up"
 render 'new'
